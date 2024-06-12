@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 
 <body>
+    <!-- sidenav-bar -->
+    <section class="side-nav w-[50%] h-[100%] bg-green-100 fixed top-0 right-[-50%] flex justify-center md:hidden z-40 transition-all duration-1000">
+        <p class="x-icon  text-2xl absolute top-3 right-5 cursor-pointer  ">x</p>
+        <ul class="  gap-10 flex flex-col text-gray-600 mt-20 ">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a> </li>
+        </ul>
+
+    </section>
      <!-- Responsive nav bar -->
-     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10 bar">
         <h1 class="text-2xl cursor-pointer">Greenden</h1>
         <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
             className="size-6 w-8">
@@ -24,55 +36,55 @@
 
         <ul class="hidden gap-3 text-gray-600 md:flex ">
             <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
-            <li><a class="hover:underline hover:text-black" href="prodect.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
             <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a> </li>
         </ul>
         </div>
     </nav>
     <section class="p-4  flex flex-col justify-center items-center  ">
         <h1 class="text-3xl font-bold  " >Our Product</h1>
-        <input type="text " class="border border-black p-2 rounded my-5 focus:outline-none border focus:border-0" style="width: 80%;">
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center  w-full items-center gap-5 z-0">
+        <input type="text " placeholder="Search Product" class="pro-input  p-2 rounded my-5 /*  border-black focus:outline-none border focus:border-1 */" style="width: 80%;">
+        <div class="products grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center  w-full items-center gap-5 z-0 min-h-[250px]">
             <div class="box   flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2 " src="./img/plant-1.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2 " src="./img/plant-1.jpg" alt="">
                 <p class="pt-1">
                     Geranium</p>
                 <p>$10</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-2.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-2.jpg" alt="">
                 <p class="pt-1">Lavandula</p>
                 <p>$15</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-3.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-3.jpg" alt="">
                 <p class="pt-1">
                     Brassica oleracea</p>
                 <p>$7</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-4.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-4.jpg" alt="">
                 <p class="pt-1">Bush</p>
                 <p>$9</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-5.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-5.jpg" alt="">
                 <p class="pt-1">Cornus kousa</p>
                 <p>$8</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-6.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-6.jpg" alt="">
                 <p class="pt-1">Daffodil</p>
                 <p>$12</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-2.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-2.jpg" alt="">
                 <p class="pt-1">
                     Daisy</p>
                 <p>$11</p>
             </div>
             <div class="box flex justify-center flex-col items-center cursor-pointer">
-                <img class="w-[200px] h-[250px] rounded transform hover:-translate-y-2" src="./img/plant-5.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded transform hover:-translate-y-2" src="./img/plant-5.jpg" alt="">
                 <p class="pt-1">Ficus lyrata</p>
                 <p>$15</p>
             </div>
@@ -81,13 +93,15 @@
     </section>
      <!-- section-7 footer -->
 
-     <section class="bg-green-100 p-4 flex flex-col gap-2">
+     <section class="bg-green-100 p-4 flex flex-col gap-2 ">
         <h1 class="text-4xl font-bold">Greeden</h1>
       
         <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, fugit.</p>
         <p class="mt-2">@ 2021 Greeden.com</p>
 
     </section>
+
+    <script src="product.js"></script>
 
 </body>
 

@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 
 <body>
+    <!-- sidenav-bar -->
+    <section class="side-nav w-[50%] h-[100%] bg-green-100 fixed top-0 right-[-50%] flex justify-center md:hidden z-40 transition-all duration-1000">
+        <p class="x-icon  text-2xl absolute top-3 right-5 cursor-pointer  ">x</p>
+        <ul class="  gap-10 flex flex-col text-gray-600 mt-20 ">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a> </li>
+        </ul>
+
+    </section>
+
     <!-- Responsive nav bar -->
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl cursor-pointer">Greenden</h1>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            className="size-6 w-8">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 w-8 md:hidden ">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="size-6 w-8 md:hidden bar cursor-pointer  ">
             <path fill-rule="evenodd"
                 d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd" />
+                clip-rule="evenodd" class="cursor-pointer" />
         </svg>
 
         <ul class="hidden gap-3 text-gray-600 md:flex ">
             <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
-            <li><a class="hover:underline hover:text-black" href="prodect.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
             <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a> </li>
         </ul>
         </div>
@@ -41,13 +54,13 @@
                 <div class="mb-4 ">
                     <button class="bg-black text-white rounded p-1 px-2">Shop Now</button>
                     <button class=" text-black border border-black rounded p-1 px-2">Watch Now</button>
-                    
-                    
+
+
                 </div>
                 <p>160+ Plants Species | 100+ Clients</p>
             </div>
         </div>
-        <div class="div flex justify-center items-center hidden md:block w-full">
+        <div class="div  justify-center items-center md:block w-full">
             <img class="mx-auto rounded" src="./img/plant.jpg" alt="">
         </div>
     </section>
@@ -71,7 +84,8 @@
 
 
                 <h2 class="text-xl font-medium mt-2">Large Assortment</h2>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae soluta est,
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae
+                    soluta est,
                     architecto nemo dolores nesciunt obcaecati ducimus deserunt aut veniam aliquid aperiam dolorem
                     dolorum cum incidunt doloribus.</p>
             </div>
@@ -83,7 +97,8 @@
                 </svg>
 
                 <h2 class="text-xl font-medium mt-2">Free and Fast Shiping</h2>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae soluta est,
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae
+                    soluta est,
                     architecto nemo dolores nesciunt obcaecati ducimus deserunt aut veniam aliquid aperiam dolorem
                     dolorum cum incidunt doloribus.</p>
             </div>
@@ -94,8 +109,9 @@
                         d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
                 </svg>
 
-                <h2 class="text-xl font-medium mt-2" >24/7 Support </h2>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae soluta est,
+                <h2 class="text-xl font-medium mt-2">24/7 Support </h2>
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui tempora repudiandae
+                    soluta est,
                     architecto nemo dolores nesciunt obcaecati ducimus deserunt aut veniam aliquid aperiam dolorem
                     dolorum cum incidunt doloribus.</p>
             </div>
@@ -110,22 +126,30 @@
         <h1 class="font-bold mt-4 text-3xl ">Best Seller</h1>
         <div class="div grid grid-cols-2 sm:grid-cols-4 mt-5 gap-5">
             <div class="inline hover:shadow-xl ">
-                <img src="./img/plant-1.jpg" class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded "  alt="" srcset="">
+                <img src="./img/plant-1.jpg"
+                    class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded "
+                    alt="" srcset="">
                 <h1>Gram Plant</h1>
                 <p>$20</p>
             </div>
             <div class="hover:shadow-xl">
-                <img src="./img/plant-2.jpg" class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded"  alt="" srcset="">
-                <h1>Gram Plant</h1>
-                <p>$20</p>
-            </div>
-            <div class=" ">
-                <img src="./img/plant-3.jpg" class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2"  alt="" srcset="">
+                <img src="./img/plant-2.jpg"
+                    class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded"
+                    alt="" srcset="">
                 <h1>Gram Plant</h1>
                 <p>$20</p>
             </div>
             <div class="hover:shadow-xl ">
-                <img src="./img/plant-5.jpg" class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded"  alt="" srcset="">
+
+                   <img src="./img/plant-3.jpg" class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2"
+                    alt="" srcset="">
+                <h1>Gram Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="hover:shadow-xl ">
+                <img src="./img/plant-5.jpg"
+                    class="cursor-pointer inline w-[200px] h-[250px] hover:shadow-xl transform hover:-translate-y-2 rounded"
+                    alt="" srcset="">
                 <h1>Gram Plant</h1>
                 <p>$20</p>
             </div>
@@ -139,17 +163,24 @@
         <h1 class="text-3xl font-bold ">Customer Review</h1>
         <div class="p flex gap-4 justify-center flex-col mt-5 text-white">
             <div class="p-4 bg-green-900 rounded cursor-pointer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae. Similique, praesentium iste.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a
+                    accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae.
+                    Similique, praesentium iste.</p>
                 <p class="text-yellow-300">Pasupathi</p>
             </div>
             <div class="p-4 bg-green-900 rounded cursor-pointer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae. Similique, praesentium iste.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a
+                    accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae.
+                    Similique, praesentium iste.</p>
                 <p class="text-yellow-300">Raja</p>
             </div>
-            <div class="p-4 bg-green-900 rounded cursor-pointer"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae. Similique, praesentium iste.</p>
+            <div class="p-4 bg-green-900 rounded cursor-pointer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deleniti est rem, tenetur illo a
+                    accusantium cumque, dolor consequuntur numquam quas consectetur atque dolorem animi et vitae.
+                    Similique, praesentium iste.</p>
                 <p class="text-yellow-300">Ram</p>
             </div>
-          
+
         </div>
     </section>
 
@@ -157,19 +188,23 @@
     <section class="p-4 flex flex-col justify-center items-center">
         <h1 class="text-3xl font-bold ">Join Our News Letter</h1>
         <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel fuga ducimus sequi</p>
-        <input type="text" class="border mt-2  border-gray-400 p-2 w-[500px]  focus:outline:none rounded" style="width: 80%;">
-        <button class="mt-3  bg-black text-white border border-0 px-2 py-1 rounded">Subscribe</button>
+        <input type="text" class="pro-input border mt-2  border-gray-400 p-2 w-[500px]  focus:outline:none rounded"
+            style="width: 80%;">
+        <button class="mt-3  bg-black text-white  border-0 px-2 py-1 rounded">Subscribe</button>
     </section>
 
     <!-- section-7 footer -->
 
     <section class="bg-green-100 p-4 flex flex-col gap-2">
         <h1 class="text-4xl font-bold">Greeden</h1>
-      
+
         <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, fugit.</p>
         <p class="mt-2">@ 2021 Greeden.com</p>
 
     </section>
+
+
+    <script src="index.js"></script>
 
 </body>
 

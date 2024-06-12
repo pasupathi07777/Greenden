@@ -1,0 +1,11 @@
+
+input:focus, textarea:focus, button:focus,.pro-input  {
+    outline: none;
+    /* border-color: black !important; */
+    box-shadow: none !important;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}
+input:hover, textarea:hover, button:hover,.pro-input:hover  {
+    border-color: black;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}  
